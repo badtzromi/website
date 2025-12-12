@@ -1,0 +1,94 @@
+body {
+  background-color: #fff0f5;
+}
+
+.challenge-card {
+  width: min(520px, 90vw);
+  margin: 24px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(255, 182, 193, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.hint {
+  color: #666;
+  margin: 0;
+}
+
+.scramble {
+  font-size: 32px;
+  letter-spacing: 8px;
+  font-weight: 700;
+  color: #ff69b4;
+  text-align: center;
+}
+
+input {
+  padding: 12px 14px;
+  font-size: 16px;
+  border: 2px solid #ffc0cb;
+  border-radius: 10px;
+  outline: none;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+input:focus {
+  border-color: #ff69b4;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#checkBtn {
+  background: #ff69b4;
+  color: #fff;
+}
+
+#checkBtn:hover:not(:disabled) {
+  background: #ff85c1;
+}
+
+#checkBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #f4f4f4;
+  color: #555;
+}
+
+.secondary:hover {
+  background: #e6e6e6;
+}
+
+.message {
+  min-height: 24px;
+  font-weight: 600;
+}
+
+.success {
+  color: #2e7d32;
+}
+
+.error {
+  color: #c62828;
+}

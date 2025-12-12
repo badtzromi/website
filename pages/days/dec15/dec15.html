@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>December 15 Challenge</title>
+  <link rel="stylesheet" href="../../../style.css">
+  <link rel="stylesheet" href="dec15.css">
+  <link rel="icon" type="image/jpeg" href="../../../images/kuromi-icon.jpg">
+</head>
+<body>
+  <h1>December 15th Challenge</h1>
+
+  <h4>Technically some of these words are not words,<br> 
+    but they are words in our hearts <br> for example: hajimi</h4>
+
+  <br>
+
+  <h4>Also, some of them may technically be two words,<br> 
+    we are going to treat them as one word <br> for example: dim sum => dimsum</h4>
+
+  <br>
+
+  <div class="challenge-card">
+    <p class="hint">Unscramble 10 words! Word <span id="currentWord">1</span> of 10</p>
+    <div class="scramble" id="scramble"></div>
+    <input id="guess" type="text" placeholder="Type the word" autocomplete="off" />
+    <div class="buttons">
+      <button id="checkBtn">Check</button>
+      <button id="resetBtn" class="secondary">Shuffle</button>
+    </div>
+    <div class="message" id="message"></div>
+    <p>Back to <a href="../../calendar/calendar.html">calendar</a></p>
+  </div>
+
+  <script src="words.js"></script>
+  <script src="dec15.js"></script>
+</body>
+</html>
