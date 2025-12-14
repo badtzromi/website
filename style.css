@@ -40,5 +40,9 @@ img {
   border-radius: 12px;
   margin-top: 20px;
   box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.2);
+  display: center
+}
+
+#kuroms-kissing-photo {
   display: none;
 }
