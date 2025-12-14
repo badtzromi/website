@@ -1,0 +1,144 @@
+body {
+  background-color: #fff0f5;
+}
+
+.challenge-card {
+  width: min(800px, 90vw);
+  margin: 24px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(255, 182, 193, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hint {
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+
+.game-section {
+  margin: 16px 0;
+}
+
+.game-section h3 {
+  margin: 0 0 12px 0;
+  color: #ff69b4;
+  font-size: 18px;
+}
+
+.image-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+  align-items: center;
+  min-height: 120px;
+}
+
+.memory-image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border: 3px solid #ffc0cb;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.3);
+}
+
+.memory-image:hover {
+  transform: scale(1.05);
+  border-color: #ff69b4;
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.4);
+}
+
+.memory-image.selected {
+  border-color: #ff69b4;
+  border-width: 4px;
+  opacity: 0.7;
+}
+
+.memory-image.disabled {
+  cursor: not-allowed;
+  opacity: 0.5;
+}
+
+.selected-section {
+  margin: 16px 0;
+  padding: 16px;
+  background: #fff0f5;
+  border-radius: 10px;
+}
+
+.selected-section h3 {
+  margin: 0 0 12px 0;
+  color: #ff69b4;
+  font-size: 18px;
+}
+
+.selected-image {
+  width: 80px;
+  height: 80px;
+  object-fit: cover;
+  border: 2px solid #ff69b4;
+  border-radius: 8px;
+  margin: 4px;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#checkBtn {
+  background: #ff69b4;
+  color: #fff;
+}
+
+#checkBtn:hover:not(:disabled) {
+  background: #ff85c1;
+}
+
+#checkBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #f4f4f4;
+  color: #555;
+}
+
+.secondary:hover {
+  background: #e6e6e6;
+}
+
+.message {
+  min-height: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.success {
+  color: #2e7d32;
+}
+
+.error {
+  color: #c62828;
+}

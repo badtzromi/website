@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>December 19 Challenge</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="dec19.css" />
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="../../../images/kuromi-icon.jpg"
+    />
+  </head>
+  <body>
+    <h1>December 19th Challenge</h1>
+
+    <div class="challenge-card">
+      <p class="hint">
+        Memory Game! Remember the order of the images, then
+        select them in the correct sequence. <br>
+        Refresh the page if you did not have enough time to memorize!
+      </p>
+
+      <div class="game-section">
+        <h3>Original Order (memorize this!)</h3>
+        <div class="image-row" id="originalRow"></div>
+      </div>
+
+      <div class="game-section">
+        <h3>Scrambled Order (select in original order)</h3>
+        <div class="image-row" id="scrambledRow"></div>
+      </div>
+
+      <div class="selected-section">
+        <h3>Your Selection</h3>
+        <div class="image-row" id="selectedRow"></div>
+      </div>
+
+      <div class="buttons">
+        <button id="checkBtn">Check</button>
+        <button id="resetBtn" class="secondary">
+          New Game
+        </button>
+      </div>
+
+      <div class="message" id="message"></div>
+      <p>
+        Back to
+        <a href="../../calendar/calendar.html">calendar</a>
+      </p>
+    </div>
+
+    <script src="dec19.js"></script>
+  </body>
+</html>
