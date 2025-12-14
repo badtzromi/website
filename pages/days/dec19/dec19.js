@@ -8,6 +8,8 @@ const messageEl = document.getElementById('message');
 // List of images from the media folder
 // Add your image filenames here (they should be in the media/ folder)
 const imageFilenames = [
+  'sandshrew.png',
+  'pochita.webp',
   'axolotl.jpg',
   'badtz-hat.webp',
   'calico-stare.jpg',
