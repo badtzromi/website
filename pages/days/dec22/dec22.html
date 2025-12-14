@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>December 22 Challenge</title>
+    <link rel="stylesheet" href="../../../style.css" />
+    <link rel="stylesheet" href="dec22.css" />
+    <link
+      rel="icon"
+      type="image/jpeg"
+      href="../../../images/kuromi-icon.jpg"
+    />
+  </head>
+  <body>
+    <h1>December 22nd Challenge</h1>
+
+    <div class="challenge-card">
+      <p class="hint">
+        Kuromi Runner Game! <br />
+        Press SPACE or UP ARROW to jump and avoid obstacles.
+      </p>
+
+      <div class="game-container">
+        <canvas id="gameCanvas" width="800" height="300"></canvas>
+        <div class="game-info">
+          <div class="score">Score: <span id="score">0</span></div>
+          <div class="high-score">High Score: <span id="highScore">0</span></div>
+        </div>
+        <div class="game-over" id="gameOver">
+          <h2>Game Over!</h2>
+          <p>Press SPACE to restart</p>
+        </div>
+        <div class="start-screen" id="startScreen">
+          <h2>Kuromi Runner</h2>
+          <p>Press SPACE to start</p>
+        </div>
+      </div>
+
+      <p>
+        Back to
+        <a href="../../calendar/calendar.html">calendar</a>
+      </p>
+    </div>
+
+    <script src="dec22.js"></script>
+  </body>
+</html>

@@ -1,0 +1,111 @@
+body {
+  background-color: #fff0f5;
+}
+
+.challenge-card {
+  width: min(900px, 90vw);
+  margin: 24px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(255, 182, 193, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hint {
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+
+.game-container {
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+#gameCanvas {
+  border: 3px solid #ffc0cb;
+  border-radius: 12px;
+  background: #fff0f5;
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.game-info {
+  display: flex;
+  gap: 24px;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+}
+
+.score,
+.high-score {
+  padding: 8px 16px;
+  background: #fff0f5;
+  border-radius: 8px;
+  border: 2px solid #ffc0cb;
+}
+
+.game-over,
+.start-screen {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(255, 255, 255, 0.95);
+  padding: 32px;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  border: 3px solid #ff69b4;
+  z-index: 10;
+}
+
+.start-screen {
+  display: block;
+}
+
+.game-over {
+  display: none;
+}
+
+.game-over h2,
+.start-screen h2 {
+  margin: 0 0 16px 0;
+  color: #ff69b4;
+  font-size: 28px;
+}
+
+.game-over p,
+.start-screen p {
+  margin: 0;
+  color: #666;
+  font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  #gameCanvas {
+    width: 100%;
+    height: auto;
+  }
+
+  .game-info {
+    flex-direction: column;
+    gap: 12px;
+    width: 100%;
+  }
+
+  .score,
+  .high-score {
+    text-align: center;
+  }
+}
