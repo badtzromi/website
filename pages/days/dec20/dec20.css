@@ -1,0 +1,170 @@
+body {
+  background-color: #fff0f5;
+}
+
+.challenge-card {
+  width: min(800px, 90vw);
+  margin: 24px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(255, 182, 193, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.hint {
+  color: #666;
+  margin: 0;
+  text-align: center;
+}
+
+.game-section {
+  margin: 16px 0;
+}
+
+.images-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 24px;
+  justify-items: center;
+}
+
+.image-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 16px;
+  background: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.2);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.image-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(255, 182, 193, 0.3);
+}
+
+.game-image {
+  width: 150px;
+  height: 150px;
+  object-fit: cover;
+  border: 3px solid #ffc0cb;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.3);
+}
+
+.image-card.correct .game-image {
+  border-color: #4caf50;
+  box-shadow: 0 2px 8px rgba(76, 175, 80, 0.4);
+}
+
+.image-card.incorrect .game-image {
+  border-color: #f44336;
+  box-shadow: 0 2px 8px rgba(244, 67, 54, 0.4);
+}
+
+.input-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.game-input {
+  width: 100%;
+  max-width: 180px;
+  padding: 8px 12px;
+  border: 2px solid #ffc0cb;
+  border-radius: 8px;
+  font-size: 14px;
+  text-align: center;
+  transition: border-color 0.2s ease;
+}
+
+.game-input:focus {
+  outline: none;
+  border-color: #ff69b4;
+}
+
+.image-card.correct .game-input {
+  border-color: #4caf50;
+  background-color: #e8f5e9;
+}
+
+.image-card.incorrect .game-input {
+  border-color: #f44336;
+  background-color: #ffebee;
+}
+
+.feedback-text {
+  font-size: 12px;
+  font-weight: 600;
+  min-height: 16px;
+}
+
+.feedback-text.correct {
+  color: #2e7d32;
+}
+
+.feedback-text.incorrect {
+  color: #c62828;
+}
+
+.buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+button {
+  flex: 1;
+  padding: 12px 0;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+#checkBtn {
+  background: #ff69b4;
+  color: #fff;
+}
+
+#checkBtn:hover:not(:disabled) {
+  background: #ff85c1;
+}
+
+#checkBtn:disabled {
+  background: #ccc;
+  cursor: not-allowed;
+}
+
+.secondary {
+  background: #f4f4f4;
+  color: #555;
+}
+
+.secondary:hover {
+  background: #e6e6e6;
+}
+
+.message {
+  min-height: 24px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.success {
+  color: #2e7d32;
+}
+
+.error {
+  color: #c62828;
+}
