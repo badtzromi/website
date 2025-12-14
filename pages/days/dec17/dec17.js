@@ -21,7 +21,10 @@ const imageFilenames = [
   'kuromi-witch.webp',
   'pekkle.webp',
   'small-tired-cat.jpg',
-  'white-seal.webp'
+  'white-seal.webp',
+  'kuromi-dress.png',
+  'kurom-3d-giggling.jpeg',
+  'nailong.jpeg'
 ];
 
 // Build full paths to images in the media folder
