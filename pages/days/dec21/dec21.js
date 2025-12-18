@@ -76,19 +76,6 @@ const questions = [
     correct: 4,
   },
   {
-    question: "Which of these colours ?",
-    options: [
-      "Shopify",
-      "codepxl",
-      "IBM",
-      "UofT urban data centre",
-      "Government of Canada, student analytics",
-      "Teaching assistent for Calulus II",
-      "Have worked for all of the above",
-    ],
-    correct: 4,
-  },
-  {
     question: "Which of these fruits do I like the least?",
     options: [
       "Kiwi",
@@ -153,6 +140,30 @@ const questions = [
       "CSGO"
     ],
     correct: 7,
+  },
+  {
+    question:
+      "Which of these schools have I not studied at?",
+    options: [
+      "Watson Elementary Public School",
+      "Gledhill Junior Public School",
+      "Earl Beatty Junior and Senior Public School",
+      "Monarch Park Collegiate Institute",
+      "University of Toronto"
+    ],
+    correct: 0,
+  },
+  {
+    question:
+      "What was Eevee's original name at the cat rescue?",
+    options: [
+      "Tabbie",
+      "Sneezy",
+      "Bella",
+      "Kiwi",
+      "Mango"
+    ],
+    correct: 3,
   },
 ];
 
