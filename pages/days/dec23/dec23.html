@@ -16,22 +16,28 @@
     />
   </head>
   <body>
-    <h1>December 23th Challenge</h1>
+    <h1>December 23st Challenge</h1>
 
     <div class="challenge-card">
-        <h3>Whack-a-Badtz</h3>
-      
-        <div class="stats">
-          <div>Score: <span id="score">0</span></div>
-          <div>Time: <span id="time">30</span>s</div>
-        </div>
-      
-        <div class="game-board" id="board"></div>
-      
-        <button id="startButton">Start Game</button>
-      
-        <a href="calendar.html">Back to calendar</a>
+      <p class="hint">
+        Multiple Choice Quiz! <br />
+        Select the correct answer for each question.
+      </p>
+
+      <div class="quiz-section" id="quizSection"></div>
+
+      <div class="buttons">
+        <button id="checkBtn">Check Answers</button>
+        <button id="resetBtn" class="secondary">
+          Reset
+        </button>
       </div>
+
+      <div class="message" id="message"></div>
+      <p>
+        Back to
+        <a href="../../calendar/calendar.html">calendar</a>
+      </p>
     </div>
 
     <script src="dec23.js"></script>
