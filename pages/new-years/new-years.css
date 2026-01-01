@@ -1,0 +1,45 @@
+body {
+  background-color: #fff0f5;
+}
+
+.answer-row {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+}
+
+#answer {
+  padding: 10px 12px;
+  font-size: 16px;
+  border-radius: 10px;
+  border: 2px solid #ffc0cb;
+  outline: none;
+  width: 180px;
+  box-sizing: border-box;
+}
+
+#answer:focus {
+  border-color: #ff69b4;
+}
+
+#submit {
+  padding: 10px 16px;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  background: #ff69b4;
+  color: white;
+  cursor: pointer;
+}
+
+#submit:hover {
+  background: #ff85c1;
+}
+
+#result {
+  margin-top: 14px;
+  font-weight: 600;
+}
+
