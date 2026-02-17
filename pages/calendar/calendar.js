@@ -1,6 +1,6 @@
 const calendarGrid = document.getElementById('calendarGrid');
 const today = new Date();
-const currentYear = today.getFullYear();
+const currentYear = 2025;
 const currentMonth = today.getMonth(); // 0-11, where 11 is December
 const currentDay = today.getDate();
 
