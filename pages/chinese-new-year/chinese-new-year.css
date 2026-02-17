@@ -1,0 +1,125 @@
+body {
+  background-color: #fff0f5;
+}
+
+.content-container {
+  width: min(800px, 90vw);
+  margin: 24px auto;
+  padding: 24px;
+  background: #fff;
+  border-radius: 14px;
+  box-shadow: 0 4px 14px rgba(255, 182, 193, 0.25);
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.celebration-section {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.greeting {
+  text-align: center;
+  font-size: 18px;
+  color: #333;
+  margin: 0;
+  padding: 16px;
+  background: #fff0f5;
+  border-radius: 12px;
+}
+
+.media-section {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.gif-container,
+.audio-container {
+  padding: 20px;
+  background: #fff0f5;
+  border-radius: 12px;
+  box-shadow: 0 2px 8px rgba(255, 182, 193, 0.2);
+}
+
+.gif-container h3,
+.audio-container h3 {
+  margin: 0 0 16px 0;
+  color: #ff69b4;
+  font-size: 20px;
+  text-align: center;
+}
+
+.gif-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 12px;
+}
+
+.celebration-gif {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.celebration-gif:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 12px rgba(255, 105, 180, 0.3);
+}
+
+.audio-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.audio-player {
+  width: 100%;
+  max-width: 500px;
+  margin-bottom: 12px;
+  border-radius: 8px;
+}
+
+.audio-player::-webkit-media-controls-panel {
+  background-color: #fff;
+}
+
+.note {
+  font-size: 12px;
+  color: #999;
+  font-style: italic;
+  text-align: center;
+  margin: 8px 0 0 0;
+}
+
+.back-link {
+  text-align: center;
+  margin-top: 8px;
+}
+
+.back-link a {
+  color: #ff69b4;
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.back-link a:hover {
+  color: #ff85c1;
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  .gif-grid {
+    grid-template-columns: 1fr;
+  }
+  
+  .greeting {
+    font-size: 16px;
+  }
+}
